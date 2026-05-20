@@ -1,4 +1,3 @@
-// Llama a la Netlify Function (proxy seguro) en vez de Anthropic directamente
 export async function callClaude({ system, messages, maxTokens = 1200 }) {
   const resp = await fetch('/api/claude', {
     method: 'POST',
